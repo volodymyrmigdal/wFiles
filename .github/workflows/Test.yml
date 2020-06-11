@@ -38,7 +38,8 @@ jobs :
       with :
         node-version : ${{ matrix.node-version }}
     - run : npm i
-    - run : npm test
+    - run : node proto/dwtools/amid/files.test/Git.test.ss v:10
+    # - run : npm test
 
   Full :
     if : "startsWith( github.event.head_commit.message, 'version' )"
