@@ -3,11 +3,11 @@ name : Test
 
 on :
   push :
-    branches : [ test ]
+    branches : [ tests ]
   pull_request :
-    branches : [ master ]
+    branches : [ tests ]
   pull_request_review :
-    branches : [ master ]
+    branches : [ tests ]
 
 jobs :
 
